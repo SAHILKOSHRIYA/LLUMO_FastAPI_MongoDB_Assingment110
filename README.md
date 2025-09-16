@@ -62,8 +62,10 @@ LLUMO_FastAPI_MongoDB_Assingment110/
 │── tests/                   # (optional) test cases
 │
 │── .env                     # Environment variables (MONGO_URI, DB_NAME, SECRET_KEY)
+│── .DS_Store                # System file (ignored in .gitignore)
 │── requirements.txt         # Dependencies
 │── README.md                # Documentation
+│── LLUMO_Assingment_SAHIL110.pdf   # Assignment PDF
 │── EmployeeAPI.postman_collection.json   # Postman collection
 
 ```
