@@ -1,4 +1,4 @@
-# Employee Management API – FastAPI + MongoDB
+# LLUMO Assisment : Employee Management API – FastAPI + MongoDB- Junior SDE_Sahil_koshriya
 
 This project is a **RESTful API** built with **FastAPI** and **MongoDB**, designed to manage employee data efficiently.  
 It supports CRUD operations, querying, aggregation, and JWT authentication for security.  
