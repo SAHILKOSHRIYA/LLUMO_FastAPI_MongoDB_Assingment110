@@ -5,6 +5,27 @@ It supports CRUD operations, querying, aggregation, and JWT authentication for s
 
 ---
 
+📌 **Must Check:** The file **`LLUMO_Assingment_SAHIL110.pdf`** is included in this repository.  
+   - It contains a detailed overview of the assignment and expected results.  
+   - Please review it to understand the project requirements clearly before running the code. 
+
+---
+
+
+## 👨‍💻 About the Author
+
+**Sahil Koshriya**  
+🎓 NIT Sudent - Computer Application Program | 💡 Aspiring Software Engineer | ⚡ Passionate about Backend & Full-Stack Development  
+
+I enjoy building **scalable applications** using **FastAPI, Django, React, and MongoDB**.  
+Currently, I am exploring **cloud deployment (AWS/GCP)**, **data modeling**, and **system design** to grow as a well-rounded developer.  
+
+📫 **Connect with me:**  
+- GitHub: [SAHILKOSHRIYA](https://github.com/SAHILKOSHRIYA)  
+- LinkedIn: [Sahil Koshriya](https://www.linkedin.com/in/sahil-koshriya/)  
+- 7974426778
+---
+
 ## 📌 Problem Statement
 Managing employee data manually or through unstructured systems becomes inefficient as organizations grow.  
 This API provides a structured way to:
