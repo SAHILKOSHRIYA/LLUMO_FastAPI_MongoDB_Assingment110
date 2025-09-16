@@ -1,0 +1,187 @@
+{
+  "info": {
+    "name": "Employee Management API",
+    "_postman_id": "e1b02d2f-1234-5678-9012-abcdef123456",
+    "description": "Postman collection for Employee Management API (FastAPI + MongoDB)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Employee",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"employee_id\": \"E123\",\n  \"name\": \"John Doe\",\n  \"department\": \"Engineering\",\n  \"salary\": 75000,\n  \"joining_date\": \"2023-01-15\",\n  \"skills\": [\"Python\", \"MongoDB\", \"APIs\"]\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/employees",
+          "protocol": "http",
+          "host": [
+            "127.0",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "employees"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Employee by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8000/employees/E123",
+          "protocol": "http",
+          "host": [
+            "127.0",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "employees",
+            "E123"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Employee",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"salary\": 80000,\n  \"department\": \"Research\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/employees/E123",
+          "protocol": "http",
+          "host": [
+            "127.0",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "employees",
+            "E123"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Employee",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://127.0.0.1:8000/employees/E123",
+          "protocol": "http",
+          "host": [
+            "127.0",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "employees",
+            "E123"
+          ]
+        }
+      }
+    },
+    {
+      "name": "List Employees by Department",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8000/employees?department=Engineering",
+          "protocol": "http",
+          "host": [
+            "127.0",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "employees"
+          ],
+          "query": [
+            {
+              "key": "department",
+              "value": "Engineering"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Average Salary by Department",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8000/employees/avg-salary",
+          "protocol": "http",
+          "host": [
+            "127.0",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "employees",
+            "avg-salary"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Search Employees by Skill",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8000/employees/search?skill=Python",
+          "protocol": "http",
+          "host": [
+            "127.0",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "employees",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "skill",
+              "value": "Python"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
